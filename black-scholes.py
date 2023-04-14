@@ -12,7 +12,6 @@ MAP3122 : A2 - Modelo de Black-Scholes
 import math
 import numpy as np
 import matplotlib.pyplot as plt
-import sys
 from statistics import NormalDist
 
 ################################### Variáveis e valores exatos no modelo ##########################################
@@ -87,8 +86,8 @@ def main():
 
     # Parâmetros do programa
     L = 10    # Subdomínio de x usado para o Método das Linhas é [-L, L]
-    N = 1000 # Número de passos de integração de x para o Método das Linhas
-    M = 1000  # Número de passos de integração de tau para o Método das Linhas
+    N = 1000  # Número de passos de integração de x para o Método das Linhas
+    M = 100   # Número de passos de integração de tau para o Método das Linhas
 
     print("Insira os dados necessários para a precificação da opção.\n")
     print("\n")
